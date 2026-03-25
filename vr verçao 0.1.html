@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+</head>
+
+<body>
+<a-scene>
+
+  <!--  PLAYER -->
+  <a-entity position="0 1.6 5"
+            camera
+            wasd-controls="acceleration: 20"
+            look-controls="pointerLockEnabled: true">
+  </a-entity>
+
+  <!--  CHÃO VERDE -->
+  <a-plane color="#2e8b57"
+           rotation="-90 0 0"
+           width="50"
+           height="50">
+  </a-plane>
+
+  <!--  LAGO (círculo no meio) -->
+  <a-circle color="#1e90ff"
+            radius="5"
+            rotation="-90 0 0"
+            position="0 0.01 0"
+            opacity="0.8">
+  </a-circle>
+
+  <!-- ÁRVORES -->
+  <!-- árvore 1 -->
+  <a-cylinder position="-6 1 -4" radius="0.2" height="2" color="#8B4513"></a-cylinder>
+  <a-sphere position="-6 2.5 -4" radius="1" color="green"></a-sphere>
+
+  <!-- árvore 2 -->
+  <a-cylinder position="5 1 -6" radius="0.2" height="2" color="#8B4513"></a-cylinder>
+  <a-sphere position="5 2.5 -6" radius="1" color="green"></a-sphere>
+
+  <!-- árvore 3 -->
+  <a-cylinder position="-3 1 -10" radius="0.2" height="2" color="#8B4513"></a-cylinder>
+  <a-sphere position="-3 2.5 -10" radius="1" color="green"></a-sphere>
+
+  <!-- árvore 4 -->
+  <a-cylinder position="7 1 -2" radius="0.2" height="2" color="#8B4513"></a-cylinder>
+  <a-sphere position="7 2.5 -2" radius="1" color="green"></a-sphere>
+
+  <!-- árvore 5 -->
+  <a-cylinder position="-8 1 -8" radius="0.2" height="2" color="#8B4513"></a-cylinder>
+  <a-sphere position="-8 2.5 -8" radius="1" color="green"></a-sphere>
+
+  <!--  CÉU -->
+  <a-sky color="#87CEEB"></a-sky>
+
+  <!-- LUZ -->
+  <a-light type="ambient" intensity="0.7"></a-light>
+  <a-light type="directional" position="5 10 5" intensity="0.6"></a-light>
+
+</a-scene>
+</body>
+</html>
